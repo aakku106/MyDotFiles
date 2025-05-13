@@ -218,6 +218,10 @@ run = "move-node-to-workspace B" # FireFox Normal
 if.app-id='com.apple.ActivityMonitor'
 run = "move-node-to-workspace F" # ActivityMonitor
 
+[[on-window-detected]]
+if.app-id='md.obsidian' 
+run = "move-node-to-workspace N" # Note taking app obsidian
+
 
 
 #-----------------Add app below this which aaerespace shall ignore --------------------#
