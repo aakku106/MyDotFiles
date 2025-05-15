@@ -125,7 +125,7 @@ keymap = [
 
 	# Goto
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
-	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Go ~/.config" },
+	{ on = [ "g", "c" ],       run = "cd ~/.dotfiles/",     desc = "Go ~/.config" },
 	{ on = [ "g", "d" ],       run = "cd ~/Documents",   desc = "Go ~/Document" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },
 	{ on = [ "g", "f" ],       run = "follow",           desc = "Follow hovered symlink" },
