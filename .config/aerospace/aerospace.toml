@@ -167,11 +167,11 @@ alt-shift-l = ['join-with right', 'mode main']
 # run aerospace list-apps  and past app it there 
 [[on-window-detected]]
 if.app-id = 'org.alacritty'
-run = "move-node-to-workspace T"# terminal
+run = "move-node-to-workspace T"# terminal alacrity
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Terminal'
-run = "move-node-to-workspace T"# Terminal
+run = "move-node-to-workspace T"# Terminal defult
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
@@ -223,7 +223,15 @@ run = "move-node-to-workspace N" # Note taking app obsidian
 
 [[on-window-detected]]
 if.app-id='org.mozilla.firefoxdeveloperedition'
-run = "move-node-to-workspace B" #firefox
+run = "move-node-to-workspace B" #firefox dev
+
+[[on-window-detected]]
+if.app-id='com.microsoft.VSCode'
+run = "move-node-to-workspace T" #VsCode
+
+
+
+
 
 
 
