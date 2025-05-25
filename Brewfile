@@ -15,6 +15,10 @@ brew "figlet"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -35,8 +39,6 @@ brew "poppler"
 brew "powerlevel10k"
 # Python version management
 brew "pyenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Tool Command Language
 brew "tcl-tk"
 # Python interface to Tcl/Tk
@@ -108,6 +110,10 @@ vscode "ms-dotnettools.dotnet-interactive-vscode"
 vscode "ms-dotnettools.vscode-dotnet-pack"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
 vscode "ms-dotnettools.vscodeintellicode-csharp"
+vscode "ms-mssql.data-workspace-vscode"
+vscode "ms-mssql.mssql"
+vscode "ms-mssql.sql-bindings-vscode"
+vscode "ms-mssql.sql-database-projects-vscode"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -134,6 +140,7 @@ vscode "sourcery.sourcery"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "tomoki1207.pdf"
 vscode "usernamehw.errorlens"
+vscode "vintharas.learn-vim"
 vscode "visualstudioexptteam.intellicode-api-usage-examples"
 vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vscodevim.vim"
