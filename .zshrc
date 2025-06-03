@@ -98,3 +98,4 @@ alias dotcommit="git add . && git commit -m '.'"
 alias dk='docker'
 alias c="clear"
 alias nv="nvim"
+alias la="lazygit"
