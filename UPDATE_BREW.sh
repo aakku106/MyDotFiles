@@ -1,8 +1,10 @@
 #!/bin/bash
 
 LOG_FILE="$HOME/brew_update_log.txt"
-
 {
+  echo "🕒 Brew Update Log - $(date)"
+  echo "------------------------------"
+
   echo "📦 Checking for outdated packages..."
   brew outdated
 
