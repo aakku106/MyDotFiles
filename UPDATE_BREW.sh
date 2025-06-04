@@ -1,18 +1,22 @@
 #!/bin/bash
 
-echo "📦 Checking for outdated packages..."
-brew outdated
+LOG_FILE="$HOME/brew_update_log.txt"
 
-echo "🔄 Updating Homebrew..."
-brew update
+{
+  echo "📦 Checking for outdated packages..."
+  brew outdated
 
-echo "🚀 Upgrading all packages and apps..."
-brew upgrade
+  echo "🔄 Updating Homebrew..."
+  brew update
 
-echo "🧹 Cleaning up old versions..."
-brew cleanup
+  echo "🚀 Upgrading all packages and apps..."
+  brew upgrade
 
-echo "🩺 Running system health check (brew doctor)..."
-brew doctor
+  echo "🧹 Cleaning up old versions..."
+  brew cleanup
 
-echo "✅ All done! You're all fresh and up to date💻🔥"
+  echo "🩺 Running system health check (brew doctor)..."
+  brew doctor
+
+  echo "✅ All done! You're all fresh and up to date, Aakku 💻🔥"
+} > "$LOG_FILE" 2>&1
