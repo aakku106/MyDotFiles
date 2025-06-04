@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_FILE="$HOME/brew_update_log.txt"
+LOG_FILE="$HOME/.dotfiles/brew_update_log.txt"
 {
   echo "🕒 Brew Update Log - $(date)"
   echo "------------------------------"
@@ -20,5 +20,5 @@ LOG_FILE="$HOME/brew_update_log.txt"
   echo "🩺 Running system health check (brew doctor)..."
   brew doctor
 
-  echo "✅ All done! You're all fresh and up to date, Aakku 💻🔥"
+  echo "✅ All done! You're all fresh and up to date 💻🔥"
 } > "$LOG_FILE" 2>&1
