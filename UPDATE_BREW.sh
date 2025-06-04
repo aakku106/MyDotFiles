@@ -15,4 +15,4 @@ brew cleanup
 echo "🩺 Running system health check (brew doctor)..."
 brew doctor
 
-echo "✅ All done! You're all fresh and up to date, Aakku 💻🔥"
+echo "✅ All done! You're all fresh and up to date💻🔥"
