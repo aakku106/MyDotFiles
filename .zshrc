@@ -89,7 +89,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 alias gs='git status'
 alias ga='git add .'
-alias gc='git commit -m'
+alias gc='git commit -m '
 alias gp='git push'
 alias gc='git checkout'
 alias gd='git diff'
@@ -99,3 +99,5 @@ alias dk='docker'
 alias c="clear"
 alias nv="nvim"
 alias la="lazygit"
+alias wee="caffeinate -d"
+alias weee="caffeinate -d"
