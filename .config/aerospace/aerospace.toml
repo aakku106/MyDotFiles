@@ -230,7 +230,9 @@ if.app-id='com.microsoft.VSCode'
 run = "move-node-to-workspace T" #VsCode
 
 
-
+[[on-window-detected]]
+if.app-id='com.apple.iWork.Numbers'
+run = "move-node-to-workspace 2" #Numbers
 
 
 
