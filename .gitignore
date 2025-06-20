@@ -1,2 +1,3 @@
 # Ignore GitHub Copilot sensitive data
 .config/github-copilot/apps.json
+brew_update_lo*
