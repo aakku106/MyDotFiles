@@ -83,6 +83,7 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
+--
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -1020,3 +1021,75 @@ require('lazy').setup({
 vim.keymap.set('n', '<leader>w', ':w<CR>', { noremap = true, silent = true, desc = 'Save File' })
 vim.keymap.set('n', '<leader>q', ':q<CR>', { noremap = true, silent = true, desc = 'Quit File' })
 vim.keymap.set('n', '<leader>x', ':wq<CR>', { noremap = true, silent = true, desc = 'Save & Quit' })
+
+-- color scheme
+-- 🌙 Balanced Transparent Colorscheme: Night Drift
+vim.opt.termguicolors = true
+vim.opt.background = 'dark'
+vim.cmd 'hi clear'
+if vim.fn.exists 'syntax_on' == 1 then
+  vim.cmd 'syntax reset'
+end
+vim.g.colors_name = 'night_drift'
+
+local set = vim.api.nvim_set_hl
+local none = 'NONE'
+
+-- Base colors
+local bg = '#0e1116'
+local fg = '#c0c5ce'
+local comment = '#5c6370'
+local blue = '#61afef'
+local green = '#98c379'
+local red = '#e06c75'
+local yellow = '#e5c07b'
+local cursor = '#abb2bf'
+
+-- UI Elements
+set(0, 'Normal', { fg = fg, bg = none })
+set(0, 'NormalNC', { fg = fg, bg = none })
+set(0, 'SignColumn', { bg = none })
+set(0, 'LineNr', { fg = '#3e4451', bg = none })
+set(0, 'VertSplit', { fg = '#1c1f24', bg = none })
+set(0, 'CursorLine', { bg = '#1a1d23' })
+set(0, 'Cursor', { fg = bg, bg = cursor })
+
+-- Statusline / Tabs
+set(0, 'StatusLine', { fg = fg, bg = '#1c1f24' })
+set(0, 'StatusLineNC', { fg = comment, bg = '#1c1f24' })
+set(0, 'TabLine', { fg = comment, bg = bg })
+set(0, 'TabLineSel', { fg = fg, bg = '#2c313a', bold = true })
+
+-- Pmenu (popup like autocomplete)
+set(0, 'Pmenu', { fg = fg, bg = '#1c1f24' })
+set(0, 'PmenuSel', { fg = bg, bg = blue })
+set(0, 'PmenuThumb', { bg = blue })
+
+-- Syntax
+set(0, 'Comment', { fg = comment, italic = true })
+set(0, 'Constant', { fg = yellow })
+set(0, 'String', { fg = green })
+set(0, 'Character', { fg = green })
+set(0, 'Number', { fg = yellow })
+set(0, 'Boolean', { fg = red })
+set(0, 'Identifier', { fg = fg })
+set(0, 'Function', { fg = blue })
+set(0, 'Statement', { fg = blue })
+set(0, 'Operator', { fg = fg })
+set(0, 'Keyword', { fg = blue })
+set(0, 'Type', { fg = green })
+set(0, 'Special', { fg = yellow })
+set(0, 'PreProc', { fg = yellow })
+set(0, 'MatchParen', { fg = blue, bg = '#2c313a', bold = true })
+
+-- Diagnostics
+set(0, 'Error', { fg = red })
+set(0, 'WarningMsg', { fg = yellow })
+set(0, 'Todo', { fg = yellow, bold = true })
+set(0, 'DiagnosticError', { fg = red })
+set(0, 'DiagnosticWarn', { fg = yellow })
+set(0, 'DiagnosticInfo', { fg = blue })
+set(0, 'DiagnosticHint', { fg = green })
+
+-- End buffer
+set(0, 'EndOfBuffer', { fg = bg, bg = none })
