@@ -87,11 +87,12 @@ fi
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" # write code . to opean folder in vsCOde from terminal 
 # ---------Alias-----------#
 
+alias g='git'
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m '
 alias gp='git push'
-alias gc='git checkout'
+alias gco='git checkout'
 alias gd='git diff'
 alias gl='git log'
 alias dotcommit="git add . && git commit -m '.'"
