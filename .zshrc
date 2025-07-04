@@ -103,3 +103,12 @@ alias la="lazygit"
 alias wee="caffeinate -d"
 alias weee="caffeinate -d"
 alias b="zsh"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+
+# Normal clean dev mode
+alias kitty-dev="kitty --config ~/.config/kitty/kitty.conf"
+
+# Naruto mode with anime background + orange theme
+alias naruto-mode="kitty --config ~/.config/kitty/naruto.conf"
