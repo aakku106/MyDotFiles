@@ -234,6 +234,10 @@ run = "move-node-to-workspace T" #VsCode
 if.app-id='com.apple.iWork.Numbers'
 run = "move-node-to-workspace 2" #Numbers
 
+[[on-window-detected]]
+if.app-id=' net.kovidgoyal.kitty'
+run = "move-node-to-workspace T" #Kitty Terminal
+
 
 
 
