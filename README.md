@@ -197,7 +197,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Amazing Zsh theme
 - [Kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) - Neovim configuration base
 - [Oh My Zsh](https://ohmyz.sh/) community - Shell configuration inspiration
-- [Homebrew](https://brew.sh/) - Package management for macOS
+- [Homebrew](https://brew.sh/) - Package management for macOS and Linux
 - [AeroSpace](https://github.com/nikitabobko/AeroSpace) - Tiling window manager
 
 ---
