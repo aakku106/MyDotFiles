@@ -18,16 +18,17 @@ A comprehensive and modern macOS development environment configuration, featurin
 
 ### Prerequisites
 
-- macOS (tested on latest versions)
-- [Homebrew](https://brew.sh/) installed
-- Zsh shell (default on macOS)
+- **macOS** (tested on latest versions) or **Linux** (most commands are compatible)
+- **Package Manager**: [Homebrew](https://brew.sh/) for macOS/Linux
+- **Shell**: Zsh (default on macOS, installable on Linux)
+- **Windows Users**: Manual installation of equivalent tools required (see compatibility notes)
 
 ### Installation
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/aakku106/.dotfiles.git ~/.dotfiles
+   git clone https://github.com/aakku106/MyDotFiles ~/.dotfiles
    cd ~/.dotfiles
    ```
 
@@ -49,6 +50,9 @@ A comprehensive and modern macOS development environment configuration, featurin
    ```bash
    source ~/.zshrc
    ```
+
+   or just press
+   `b`
 
 ## 📁 Structure
 
@@ -198,4 +202,14 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Note**: This configuration is personalized for macOS development. Some features may need adjustment for different systems or preferences.
+**Compatibility Notes**:
+
+- **macOS**: Fully supported with all features
+- **Linux**: Most commands and configurations are compatible. Homebrew works on Linux too! You can use the same `brew` commands, though some packages might have different names or you may occasionally need native package managers (`apt`, `yum`, `pacman`, etc.) for system-level dependencies
+- **Windows**: Manual installation required. Consider using WSL2 with Ubuntu for better compatibility, or install Windows equivalents of the tools manually
+
+**Windows Users**: This configuration is designed for Unix-like systems. For Windows, consider:
+
+- Using WSL2 (Windows Subsystem for Linux) for near-native compatibility
+- Installing Windows equivalents: PowerShell instead of Zsh, Windows Terminal, Scoop package manager
+- Manual configuration of development tools
