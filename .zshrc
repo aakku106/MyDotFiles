@@ -1,18 +1,32 @@
-# Powerlevel10k Instant Prompt (keep at top)
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# Powerlevel10k Instant Prompt (keep this at top)
+if [[ -r "${XDG_CACHE_HOME:-~/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-~/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Load other configs
-ZSH_CUSTOM="$HOME/.dotfiles/zsh"
-for file in "$ZSH_CUSTOM/"*.zsh; do source "$file"; done
-for file in "$ZSH_CUSTOM/aliases/"*.zsh; do source "$file"; done
+#===========================
+#      CONFIG SOURCING
+#===========================
 
-# Powerlevel10k theme
+# → General exports (EDITOR, DOTNET vars, etc.)
+source ~/.dotfiles/zsh/export.zsh
+
+# → PATH updates (GOPATH, VSCode path, yazi path, etc.)
+source ~/.dotfiles/zsh/paths.zsh
+
+# → Plugins (fzf, thefuck, zoxide, syntax-highlighting, autosuggestions, etc.)
+
+
+#===========================
+#     POWERLEVEL10K THEME
+#===========================
+
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Your welcome banner
+#===========================
+#      TERMINAL WELCOME
+#===========================
+
 if command -v figlet > /dev/null; then
   neofetch
   echo
@@ -26,3 +40,8 @@ if command -v figlet > /dev/null; then
   echo "${RANDOM_QUOTES[$RANDOM % ${#RANDOM_QUOTES[@]}]}"
 fi
 
+source ~/.dotfiles/zsh/plugins.zsh
+
+source ~/.dotfiles/zsh/aliases/git.zsh
+source ~/.dotfiles/zsh/aliases/docker.zsh
+source ~/.dotfiles/zsh/aliases/geneeral.zsh
