@@ -206,6 +206,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - **macOS**: Fully supported with all features
 - **Linux**: Most commands and configurations are compatible. Homebrew works on Linux too! You can use the same `brew` commands, though some packages might have different names or you may occasionally need native package managers (`apt`, `yum`, `pacman`, etc.) for system-level dependencies
+- **Bash Users**: Most tools and configurations are compatible with bash, but may require some tinkering since this setup is optimized for Zsh (aliases, prompt themes, and plugin configurations would need adaptation)
 - **Windows**: Manual installation required. Consider using WSL2 with Ubuntu for better compatibility, or install Windows equivalents of the tools manually
 
 **Windows Users**: This configuration is designed for Unix-like systems. For Windows, consider:
