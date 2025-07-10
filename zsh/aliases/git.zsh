@@ -1,0 +1,11 @@
+alias g='git'
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m '
+alias gp='git push'
+alias gco='git checkout'
+alias gb'g branch'
+alias gd='git diff'
+alias gl='git log'
+alias dotcommit="git add . && git commit -m '.'"
+alias gac='ga && gc'

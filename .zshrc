@@ -87,28 +87,15 @@ fi
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" # write code . to opean folder in vsCOde from terminal 
 # ---------Alias-----------#
 
-alias g='git'
-alias gs='git status'
-alias ga='git add .'
-alias gc='git commit -m '
-alias gp='git push'
-alias gco='git checkout'
-alias gd='git diff'
-alias gl='git log'
-alias dotcommit="git add . && git commit -m '.'"
-alias dk='docker'
-alias c="clear"
-alias nv="nvim"
-alias la="lazygit"
-alias wee="caffeinate -d"
-alias weee="caffeinate -d"
-alias b="zsh"
+# loading all alias from alias folder
+  source ~/.dotfiles/zsh/aliases/geneeral.zsh
+  source ~/.dotfiles/zsh/aliases/docker.zsh
+  source ~/.dotfiles/zsh/aliases/geneeral.zsh
+ 
+
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-
-# Normal clean dev mode
-alias kitty-dev="kitty --config ~/.config/kitty/kitty.conf"
 
 # Naruto mode with anime background + orange theme
 alias naruto-mode="kitty --config ~/.config/kitty/naruto.conf"
