@@ -90,7 +90,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # loading all alias from alias folder
   source ~/.dotfiles/zsh/aliases/geneeral.zsh
   source ~/.dotfiles/zsh/aliases/docker.zsh
-  source ~/.dotfiles/zsh/aliases/geneeral.zsh
+  source ~/.dotfiles/zsh/aliases/git.zsh
  
 
 export GOPATH=$HOME/go
