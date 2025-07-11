@@ -9,3 +9,7 @@ alias gd='git diff'
 alias gl='git log'
 alias dotcommit="git add . && git commit -m '.'"
 alias gac='git add . && git commit -m '
+alias gwt='git worktree'
+alias gwta='git worktree add'
+alias gwtr='git worktree remove'
+alias gw='git worktree list'
