@@ -8,7 +8,7 @@ alias gb'git branch'
 alias gm'git merge'
 alias gd='git diff'
 alias gl='git log'
-alias dotcommit="git add . && git commit -m '.'"
+alias commit="git add . && git commit -m '.'"
 alias push="git add . && git commit -m 'Auto commit + push script ran' && git push"
 alias gac='git add . && git commit -m '
 alias gwt='git worktree'
