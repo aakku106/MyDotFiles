@@ -1018,6 +1018,7 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
 vim.keymap.set('n', '<leader>w', ':w<CR>', { noremap = true, silent = true, desc = 'Save File' })
 vim.keymap.set('n', '<leader>q', ':q<CR>', { noremap = true, silent = true, desc = 'Quit File' })
 vim.keymap.set('n', '<leader>x', ':wq<CR>', { noremap = true, silent = true, desc = 'Save & Quit' })
