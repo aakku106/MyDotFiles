@@ -45,3 +45,4 @@ source ~/.dotfiles/zsh/plugins.zsh
 source ~/.dotfiles/zsh/aliases/git.zsh
 source ~/.dotfiles/zsh/aliases/docker.zsh
 source ~/.dotfiles/zsh/aliases/geneeral.zsh
+source ~/.dotfiles/zsh/aliases/python.zsh
