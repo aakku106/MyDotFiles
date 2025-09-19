@@ -1,11 +1,12 @@
 alias g='git'
+alias gi='git init'
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m '
 alias gp='git push'
 alias gco='git checkout'
 alias gb'git branch'
-alias gm'git merge'
+alias gm'git merge '
 alias gd='git diff'
 alias gl='git log'
 alias commit="git add . && git commit -m ' Auto commit script ran '"
