@@ -1,0 +1,153 @@
+# Common recent settings file for Wireshark 4.4.9.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /Users/aakku/Documents/WireShark/firstTry.pcapng
+
+######## Recent capture filters (latest first), cannot be altered through command line ########
+
+recent.capture_filter: tcp port http
+recent.capture_filter: tcp
+recent.capture_filter.en0: tcp
+recent.capture_filter.en0: tcp port http
+recent.capture_filter.ap1: tcp port http
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: tcp.port == 80
+recent.display_filter: tcp.port == 80 || udp.port == 80
+recent.display_filter: eth.addr == ff:ff:ff:ff:ff:ff
+recent.display_filter: eth.addr == 00:00:5e:00:53:00
+recent.display_filter:  udp
+recent.display_filter: ip.addr == 192.0.1.1
+recent.display_filter: http3
+recent.display_filter: http
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 1469
+gui.geometry_main_y: 928
+gui.geometry_main_width: 1470
+gui.geometry_main_height: 893
+
+# Main window maximized.
+# true or false (case-insensitive).
+gui.geometry_main_maximized: false
+
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb00030000000005bd000003a000000b7a00000738000005bd000003bc00000b7a00000738000000000000000005be000005bd000003bc00000b7a00000738
+
+# Leftalign Action Buttons.
+# true or false (case-insensitive).
+gui.geometry_leftalign_actions: false
+
+# Last used Configuration Profile.
+gui.last_used_profile: Classic
+
+# Number of packets or events to check for automatic profile switching.
+# Decimal number. Zero disables switching.
+#gui.profile_switch_check_count: 1000
+
+# Warn if running with elevated permissions (e.g. as root).
+# true or false (case-insensitive).
+privs.warn_if_elevated: true
+
+# Warn if Wireshark is unable to capture.
+# true or false (case-insensitive).
+sys.warn_if_no_capture: true
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# true or false (case-insensitive).
+gui.search_case_sensitive: false
+
+# Find packet search reverse direction.
+# true or false (case-insensitive).
+gui.search_reverse_dir: false
+
+# Find packet search multiple occurrences.
+# true or false (case-insensitive).
+gui.search_multiple_occurs: false
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
+
+# Geometry and maximized state of ipv6_hosts window.
+# Decimal integers.
+gui.geom.ipv6_hosts.x: 325
+gui.geom.ipv6_hosts.y: 239
+gui.geom.ipv6_hosts.width: 800
+gui.geom.ipv6_hosts.height: 459
+# true or false (case-insensitive).
+gui.geom.ipv6_hosts.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ipv6_hosts.qt_geometry: 01d9d0cb0003000000000145000000ef00000464000002d5000001450000010b00000464000002d5000000000000000005be000001450000010b00000464000002d5
+
+# Geometry and maximized state of ExpertInfoDialog window.
+# Decimal integers.
+gui.geom.ExpertInfoDialog.x: 308
+gui.geom.ExpertInfoDialog.y: 34
+gui.geom.ExpertInfoDialog.width: 864
+gui.geom.ExpertInfoDialog.height: 893
+# true or false (case-insensitive).
+gui.geom.ExpertInfoDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ExpertInfoDialog.qt_geometry: 01d9d0cb00030000000001340000002200000493000003ba000001340000003e00000493000003ba000000000000000005be000001340000003e00000493000003ba
+
+# Geometry and maximized state of ColoringRulesDialog window.
+# Decimal integers.
+gui.geom.ColoringRulesDialog.x: 245
+gui.geom.ColoringRulesDialog.y: 124
+gui.geom.ColoringRulesDialog.width: 980
+gui.geom.ColoringRulesDialog.height: 714
+# true or false (case-insensitive).
+gui.geom.ColoringRulesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ColoringRulesDialog.qt_geometry: 01d9d0cb00030000000000f50000007c000004c800000361000000f500000098000004c800000361000000000000000005be000000f500000098000004c800000361
+
+# Geometry and maximized state of ProtocolHierarchyDialog window.
+# Decimal integers.
+gui.geom.ProtocolHierarchyDialog.x: 137
+gui.geom.ProtocolHierarchyDialog.y: 111
+gui.geom.ProtocolHierarchyDialog.width: 1176
+gui.geom.ProtocolHierarchyDialog.height: 714
+# true or false (case-insensitive).
+gui.geom.ProtocolHierarchyDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ProtocolHierarchyDialog.qt_geometry: 01d9d0cb00030000000000890000006f0000052000000354000000890000008b0000052000000354000000000000000005be000000890000008b0000052000000354
+
+# Geometry and maximized state of CaptureFilePropertiesDialog window.
+# Decimal integers.
+gui.geom.CaptureFilePropertiesDialog.x: 235
+gui.geom.CaptureFilePropertiesDialog.y: 34
+gui.geom.CaptureFilePropertiesDialog.width: 980
+gui.geom.CaptureFilePropertiesDialog.height: 893
+# true or false (case-insensitive).
+gui.geom.CaptureFilePropertiesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.CaptureFilePropertiesDialog.qt_geometry: 01d9d0cb00030000000000eb00000022000004be000003ba000000eb0000003e000004be000003ba000000000000000005be000000eb0000003e000004be000003ba
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"
