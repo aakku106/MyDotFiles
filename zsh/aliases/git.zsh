@@ -16,3 +16,8 @@ alias gwt='git worktree'
 alias gwta='git worktree add'
 alias gwtr='git worktree remove'
 alias gw='git worktree list'
+
+# --- Identity switch aliases ---
+alias git_aakku='git config user.name "aakku106" && git config user.email "adarashagaihre80@nepathyacollege.edu.np" && echo "Switched identity → 🌀 aakku106"'
+
+alias rizzi='git config user.name "tofu-10" && git config user.email "rijanshrestha80@nepathyacollege.edu.np" && echo "Switched identity → 👾 tofu-10 (Rizzi)"'
