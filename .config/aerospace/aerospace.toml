@@ -176,7 +176,7 @@ run = "move-node-to-workspace T" #VsCode
 
 [[on-window-detected]]
 if.app-id = 'com.openai.chat'
-run = "move-node-to-workspace 1"# ai
+run = "move-node-to-workspace 1"# ai ChatGpt
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari.WebApp.94982590-44BE-4FAC-81DD-296DDC5B94B5' #YT-MUSIC
