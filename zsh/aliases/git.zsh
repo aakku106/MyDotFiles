@@ -9,6 +9,7 @@ alias gco='git checkout'
 alias gm='git merge '
 alias gd='git diff'
 alias gl='git log'
+alias add='git add '
 alias commit=" git commit -am ' Auto commit script ran '"
 alias committ=" git commit -am ' Auto commit script ran but somewot smarter way hehe '"
 alias push="git commit -am 'Auto commit + push script ran' && git push"
