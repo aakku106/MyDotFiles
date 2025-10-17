@@ -215,6 +215,10 @@ if.app-id='md.obsidian'
 run = "move-node-to-workspace N" # Note taking app obsidian
 
 [[on-window-detected]]
+if.app-id='com.apple.Notes'
+run = "move-node-to-workspace N" # Note taking app Note(apple defult app)
+
+[[on-window-detected]]
 if.app-id='org.mozilla.firefoxdeveloperedition'
 run = "move-node-to-workspace B" #firefox dev
 
