@@ -171,6 +171,10 @@ if.app-id = 'com.apple.Terminal'
 run = "move-node-to-workspace T"# Terminal defult
 
 [[on-window-detected]]
+if.app-id='com.microsoft.VSCode'
+run = "move-node-to-workspace T" #VsCode
+
+[[on-window-detected]]
 if.app-id = 'com.openai.chat'
 run = "move-node-to-workspace 1"# ai
 
@@ -229,10 +233,6 @@ run = "move-node-to-workspace N" # Note taking app obsidian
 [[on-window-detected]]
 if.app-id='com.apple.Notes'
 run = "move-node-to-workspace N" # Note taking app Note(apple defult app)
-
-[[on-window-detected]]
-if.app-id='com.microsoft.VSCode'
-run = "move-node-to-workspace T" #VsCode
 
 [[on-window-detected]]
 if.app-id='com.apple.ScreenContinuity'
