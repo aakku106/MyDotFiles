@@ -163,12 +163,12 @@ if.app-id = 'org.alacritty'
 run = "move-node-to-workspace T"# terminal alacrity
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Terminal'
-run = "move-node-to-workspace T"# Terminal defult
+if.app-id='net.kovidgoyal.kitty'
+run = "move-node-to-workspace T" #Kitty Terminal
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Safari'
-run = "move-node-to-workspace B"# browser
+if.app-id = 'com.apple.Terminal'
+run = "move-node-to-workspace T"# Terminal defult
 
 [[on-window-detected]]
 if.app-id = 'com.openai.chat'
@@ -195,6 +195,10 @@ if.app-id = 'com.apple.iWork.Pages'
 run = "move-node-to-workspace 2"# Page
 
 [[on-window-detected]]
+if.app-id='com.apple.iWork.Numbers'
+run = "move-node-to-workspace 2" #Numbers
+
+[[on-window-detected]]
 if.app-id='com.facebook.archon'
 run = "move-node-to-workspace 3" # TimeWastre
 
@@ -203,8 +207,16 @@ if.app-id='net.whatsapp.WhatsApp'
 run = "move-node-to-workspace 3" # Timewester
 
 [[on-window-detected]]
+if.app-id = 'com.apple.Safari'
+run = "move-node-to-workspace B"# browser Safari
+
+[[on-window-detected]]
 if.app-id='org.mozilla.firefox'
 run = "move-node-to-workspace B" # FireFox Normal
+
+[[on-window-detected]]
+if.app-id='org.mozilla.firefoxdeveloperedition'
+run = "move-node-to-workspace B" #firefox dev
 
 [[on-window-detected]]
 if.app-id='com.apple.ActivityMonitor'
@@ -219,22 +231,8 @@ if.app-id='com.apple.Notes'
 run = "move-node-to-workspace N" # Note taking app Note(apple defult app)
 
 [[on-window-detected]]
-if.app-id='org.mozilla.firefoxdeveloperedition'
-run = "move-node-to-workspace B" #firefox dev
-
-[[on-window-detected]]
 if.app-id='com.microsoft.VSCode'
 run = "move-node-to-workspace T" #VsCode
-
-
-[[on-window-detected]]
-if.app-id='com.apple.iWork.Numbers'
-run = "move-node-to-workspace 2" #Numbers
-
-[[on-window-detected]]
-if.app-id='net.kovidgoyal.kitty'
-run = "move-node-to-workspace T" #Kitty Terminal
-
 
 [[on-window-detected]]
 if.app-id='com.apple.ScreenContinuity'
