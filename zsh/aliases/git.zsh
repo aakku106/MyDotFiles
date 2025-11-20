@@ -6,7 +6,14 @@ alias gc='git commit -m '
 alias gp='git pull'
 alias gb='git branch'
 
-alias gco='git checkout $(git branch | fzf)'
+# Smart git checkout: uses fzf when no args, otherwise passes args to git checkout
+gco() {
+  if [ $# -eq 0 ]; then
+    git checkout $(git branch | fzf)
+  else
+    git checkout "$@"
+  fi
+}
 
 alias gm='git merge '
 alias gd='git diff'
