@@ -1,10 +1,10 @@
 <!-- @format -->
 
-# 🔧 Dotfiles
+# Dotfiles
 
 A comprehensive and modern macOS development environment configuration, featuring a personalized Naruto-themed terminal setup with powerful development tools.
 
-## ✨ Features
+## Features
 
 - **Modern Terminal Setup**: Alacritty and Kitty terminal configurations with transparency and blur effects
 - **Powerful Shell**: Zsh with Powerlevel10k theme, autosuggestions, and syntax highlighting
@@ -14,7 +14,7 @@ A comprehensive and modern macOS development environment configuration, featurin
 - **Personalized Experience**: Naruto-themed welcome messages and custom aliases
 - **Modular Configuration**: Well-organized, maintainable configuration files
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -54,7 +54,7 @@ A comprehensive and modern macOS development environment configuration, featurin
    or just press
    `b`
 
-## 📁 Structure
+## Structure
 
 ```text
 .dotfiles/
@@ -65,6 +65,10 @@ A comprehensive and modern macOS development environment configuration, featurin
 │   └── nvim/            # Neovim configuration
 ├── zsh/                 # Zsh shell configurations
 │   ├── aliases/         # Command aliases
+│   │   ├── git.zsh      # Git shortcuts and functions
+│   │   ├── docker.zsh   # Docker aliases
+│   │   ├── geneeral.zsh # General system aliases
+│   │   └── python.zsh   # Python aliases
 │   ├── export.zsh       # Environment variables
 │   ├── paths.zsh        # PATH configurations
 │   └── plugins.zsh      # Plugin initializations
@@ -76,7 +80,7 @@ A comprehensive and modern macOS development environment configuration, featurin
 └── UPDATE_BREW.sh      # Package update script
 ```
 
-## 🛠️ Tools & Applications
+## Tools & Applications
 
 ### Development Tools
 
@@ -94,7 +98,7 @@ A comprehensive and modern macOS development environment configuration, featurin
 ### System Utilities
 
 - **File Management**: yazi, eza, bat, fd, ripgrep
-- **System Info**: neofetch, htop
+- **System Info**: fastfetch (with neofetch fallback), htop
 - **Productivity**: AeroSpace window manager, Raycast launcher
 
 ### Fonts
@@ -102,44 +106,81 @@ A comprehensive and modern macOS development environment configuration, featurin
 - MesloLGS Nerd Font Mono
 - Symbols Only Nerd Font
 
-## ⚡ Key Features
+## Key Features
 
 ### Git Shortcuts
 
 ```bash
-g     # git
-gs    # git status
-ga    # git add .
-gc    # git commit -m
-gp    # git push
+g      # git
+gi     # git init
+gs     # git status
+gc     # git commit -m
+gp     # git pull
+gb     # git branch
+gco    # git checkout (interactive with fzf when no args)
+gco -b # create new branch
+gm     # git merge
+gd     # git diff
+gl     # git log
+add    # git add
+commit # auto commit with message
+push   # auto commit + push + clear
+clone  # git clone
+gwt    # git worktree
+gwta   # git worktree add
+gwtr   # git worktree remove
+gw     # git worktree list
+
+# Identity switching
+git_aakku  # Switch to aakku106 identity
+rizzi      # Switch to tofu-10 (Rizzi) identity
 ```
 
-### System Navigation
+### System Navigation & Utilities
 
 ```bash
-cd    # zoxide smart navigation
-l     # eza with icons and git info
-c     # clear
-nv    # neovim
-la    # lazygit
+cd       # zoxide smart navigation
+c        # clear
+e        # exit
+nv       # neovim
+la       # lazygit
+y        # yazi file manager
+l        # eza with icons and git info (compact)
+ls       # clear + eza detailed list with all files
+b        # reload zsh config (source ~/.zshrc)
+wee/weee # keep system awake (caffeinate)
+naruto   # launch kitty with Naruto theme
+
+# Python
+py       # python3
+
+# Docker
+dk       # docker
 ```
 
-### Special Commands
+### Smart Features
 
-```bash
-naruto-mode    # Launch kitty with Naruto theme
-dotcommit      # Quick commit for dotfiles
-wee/weee       # Keep system awake
-```
+#### Interactive Git Checkout with fzf
+
+- Type `gco` without arguments to get an interactive branch selector using fzf
+- Use `gco -b new-branch` to create new branches
+- Use `gco main` to directly checkout any branch
+
+#### Git Identity Management
+
+- Quickly switch between Git identities for different projects
+- `git_aakku` - Personal identity
+- `rizzi` - Collaborative identity
 
 ### Theme Customization
 
-- **Terminal Welcome**: ASCII art with rotating Naruto quotes
+- **Terminal Welcome**: Fastfetch system info with rotating Naruto quotes
+- **Random Quotes**: 6 motivational Naruto quotes that rotate on each shell start
 - **Color Schemes**: Tokyo Night, Catppuccin-inspired themes
 - **Transparency**: 70% opacity with blur effects across terminals
-- **Powerline**: Beautiful prompt with git status and system info
+- **Powerline**: Powerlevel10k prompt with git status and system info
 
-## 🔄 Maintenance
+## Maintenance
 
 ### Update Packages
 
@@ -160,7 +201,7 @@ This script will:
 
 Your existing configurations are automatically backed up when creating symbolic links.
 
-## 🎨 Customization
+## Customization
 
 ### Modifying Themes
 
@@ -172,9 +213,10 @@ Your existing configurations are automatically backed up when creating symbolic 
 
 Add custom aliases to the appropriate file in `zsh/aliases/`:
 
-- `git.zsh` - Git-related commands
+- `git.zsh` - Git-related commands and functions
 - `docker.zsh` - Docker commands
-- `geneeral.zsh` - General system commands
+- `geneeral.zsh` - General system commands and utilities
+- `python.zsh` - Python-related commands
 
 ### Installing Additional Packages
 
@@ -184,15 +226,15 @@ Add new packages to `Brewfile` and run:
 brew bundle install
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork this repository and customize it for your own use. If you have suggestions for improvements or find any issues, please open an issue or submit a pull request.
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Amazing Zsh theme
 - [Kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) - Neovim configuration base
