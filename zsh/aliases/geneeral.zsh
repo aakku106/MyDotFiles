@@ -5,7 +5,6 @@ alias nv="nvim"
 alias la="lazygit"
 alias wee="caffeinate -d"
 alias weee="caffeinate -d"
-alias bb="zsh && clear"
 alias b="source ~/.zshrc"
 alias y='yazi'
 alias l="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"

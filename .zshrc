@@ -27,18 +27,24 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 #      TERMINAL WELCOME
 #===========================
 
-if command -v figlet > /dev/null; then
+if command -v fastfetch > /dev/null; then
+  fastfetch
+elif command -v neofetch > /dev/null; then
   neofetch
-  echo
-  figlet -f slant "Welcome back, Master CCN"
-  RANDOM_QUOTES=(
-    "🔥 Your chakra is fully charged. Time to code like a Hokage Dattebyo!!!"
-    "🍜 Fueled by Ichiraku Ramen. Let's debug, dattebayo!"
-    "Know Pain, Accept pain"
-    "💻 Shadow Clone Jutsu loaded. Ready to multi-task!"
-  )
-  echo "${RANDOM_QUOTES[$RANDOM % ${#RANDOM_QUOTES[@]}]}"
 fi
+
+echo
+RANDOM_QUOTES=(
+  "🔥 Your chakra is fully charged. Time to code like a Hokage Dattebyo!!!"
+  "🍜 Fueled by Ichiraku Ramen. Let's debug, dattebayo!"
+  "⚡ Know Pain, Accept pain"
+  "💻 Shadow Clone Jutsu loaded. Ready to multi-task!"
+  "🌀 Believe it! Your code will change the world!"
+  "🦊 The Nine-Tails of debugging are with you!"
+)
+RANDOM_INDEX=$(( RANDOM % ${#RANDOM_QUOTES[@]} + 1 ))
+echo "${RANDOM_QUOTES[$RANDOM_INDEX]}"
+echo
 
 source ~/.dotfiles/zsh/plugins.zsh
 
