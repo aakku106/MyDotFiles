@@ -1,34 +1,14 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "auto",
-    "source": "",
-    "color": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": ""
-    },
-    "width": null,
-    "height": null,
+    "source": "~/.config/fastfetch/assets/jedi.png",
+    "type": "kitty-direct",
     "padding": {
-      "top": 0,
-      "left": 0,
-      "right": 4
+      "top": 1,
+      "left": 6
     },
-    "printRemaining": true,
-    "preserveAspectRatio": false,
-    "recache": false,
-    "position": "left",
-    "chafa": {
-      "fgOnly": false,
-      "symbols": "block+border+space-wide-inverted"
-    }
+    "width": 30,
+    "height": 30
   },
   "display": {
     "stat": false,
@@ -36,12 +16,9 @@
     "showErrors": false,
     "disableLinewrap": true,
     "hideCursor": false,
-    "separator": ": ",
+    "separator": "  ",
     "color": {
-      "keys": "",
-      "title": "",
-      "output": "",
-      "separator": ""
+      "separator": "white"
     },
     "brightColor": true,
     "duration": {
@@ -65,10 +42,7 @@
       "spaceBeforeUnit": "default"
     },
     "percent": {
-      "type": [
-        "num",
-        "num-color"
-      ],
+      "type": ["num", "num-color"],
       "ndigits": 0,
       "color": {
         "green": "32",
@@ -96,20 +70,9 @@
       },
       "width": 10
     },
-    "fraction": {
-      "ndigits": 2
-    },
-    "noBuffer": false,
     "key": {
-      "width": 0,
-      "type": "string",
-      "paddingLeft": 0
-    },
-    "freq": {
-      "ndigits": 2,
-      "spaceBeforeUnit": "default"
-    },
-    "constants": []
+      "width": 18
+    }
   },
   "general": {
     "thread": true,
@@ -117,185 +80,173 @@
     "detectVersion": true
   },
   "modules": [
+    "break",
     {
-      "type": "title",
-      "key": " ",
-      "keyIcon": "",
-      "fqdn": false,
-      "color": {
-        "user": "",
-        "at": "",
-        "host": ""
-      }
+      "type": "custom",
+      "format": "╭─➤  HARDWARE ───────────────────────────────────────────────╮",
+      "outputColor": "36"
     },
     {
-      "type": "separator",
-      "string": "-",
-      "outputColor": "",
-      "times": 0
+      "type": "custom",
+      "format": "╰─┬──────────────────────────────────────────────────────────╯",
+      "outputColor": "36"
     },
     {
-      "type": "os",
-      "keyIcon": ""
-    },
-    {
-      "type": "host",
-      "keyIcon": "󰌢"
-    },
-    {
-      "type": "kernel",
-      "keyIcon": ""
-    },
-    {
-      "type": "uptime",
-      "keyIcon": ""
-    },
-    {
-      "type": "packages",
-      "keyIcon": "󰏖",
-      "disabled": [
-        "winget"
-      ],
-      "combined": false
-    },
-    {
-      "type": "shell",
-      "keyIcon": ""
-    },
-    {
-      "type": "display",
-      "keyIcon": "󰍹",
-      "compactType": "none",
-      "preciseRefreshRate": false,
-      "order": null
-    },
-    {
-      "type": "de",
-      "keyIcon": "",
-      "slowVersionDetection": false
-    },
-    {
-      "type": "wm",
-      "keyIcon": "",
-      "detectPlugin": false
-    },
-    {
-      "type": "wmtheme",
-      "keyIcon": "󰓸"
-    },
-    {
-      "type": "theme",
-      "keyIcon": "󰉼"
-    },
-    {
-      "type": "icons",
-      "keyIcon": ""
-    },
-    {
-      "type": "font",
-      "keyIcon": ""
-    },
-    {
-      "type": "cursor",
-      "keyIcon": "󰆿"
-    },
-    {
-      "type": "terminal",
-      "keyIcon": ""
-    },
-    {
-      "type": "terminalfont",
-      "keyIcon": ""
+      "type": "chassis",
+      "outputColor": "38;5;208",
+      "key": "  ├ Chassis",
+      "keyColor": "36"
     },
     {
       "type": "cpu",
-      "keyIcon": "",
-      "temp": false,
-      "showPeCoreCount": false
+      "outputColor": "38;5;208",
+      "key": "  ├ CPU",
+      "keyColor": "36"
     },
     {
       "type": "gpu",
-      "keyIcon": "󰾲",
-      "driverSpecific": false,
-      "detectionMethod": "auto",
-      "temp": false,
-      "hideType": "none",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      }
+      "outputColor": "38;5;208",
+      "key": "  ├ GPU",
+      "keyColor": "36"
     },
     {
       "type": "memory",
-      "keyIcon": "",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      }
-    },
-    {
-      "type": "swap",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      },
-      "keyIcon": "󰓡",
-      "separate": false
+      "outputColor": "38;5;208",
+      "key": "  ├ Memory",
+      "keyColor": "36"
     },
     {
       "type": "disk",
-      "keyIcon": "",
-      "showRegular": true,
-      "showExternal": true,
-      "showHidden": false,
-      "showSubvolumes": false,
-      "showReadOnly": true,
-      "showUnknown": false,
-      "folders": "",
-      "hideFolders": "",
-      "hideFS": "",
-      "useAvailable": false,
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      }
+      "outputColor": "38;5;208",
+      "key": "  ├ Disk",
+      "keyColor": "36"
     },
-        {
+    {
+      "type": "display",
+      "key": "  ├ Display",
+      "keyColor": "36",
+      "outputColor": "38;5;208"
+    },
+    {
       "type": "battery",
-      "keyIcon": "",
-      "temp": false,
-      "percent": {
-        "green": 50,
-        "yellow": 20,
-        "type": 0
-      }
+      "key": "  ├ Battery",
+      "keyColor": "36",
+      "outputColor": "38;5;208"
     },
     {
-      "type": "poweradapter",
-      "keyIcon": "󰚥"
-    },
-    {
-      "type": "locale",
-      "keyIcon": ""
+      "type": "custom",
+      "format": "  ╰────────────────────────────────────────────────────────────╯",
+      "outputColor": "36"
     },
     "break",
     {
-      "type": "colors",
-      "key": " ",
-      "keyIcon": "",
-      "symbol": "block",
-      "paddingLeft": 0,
-      "block": {
-        "width": 3,
-        "range": [
-          0,
-          15
-        ]
-      }
+      "type": "custom",
+      "format": "╭─➤  SOFTWARE ───────────────────────────────────────────────╮",
+      "outputColor": "38;5;208"
+    },
+    {
+      "type": "custom",
+      "format": "╰─┬──────────────────────────────────────────────────────────╯",
+      "outputColor": "38;5;208"
+    },
+    {
+      "type": "os",
+      "key": "  ├ OS",
+      "keyColor": "38;5;208",
+      "outputColor": "36"
+    },
+    {
+      "type": "kernel",
+      "key": "  ├ Kernel",
+      "keyColor": "38;5;208",
+      "outputColor": "36"
+    },
+    {
+      "type": "shell",
+      "key": "  ├ Shell",
+      "keyColor": "38;5;208",
+      "outputColor": "36"
+    },
+    {
+      "type": "packages",
+      "key": "  ├ Packages",
+      "keyColor": "38;5;208",
+      "outputColor": "36"
+    },
+    {
+      "type": "terminal",
+      "key": "  ├ Terminal",
+      "keyColor": "38;5;208",
+      "outputColor": "36"
+    },
+    {
+      "type": "wm",
+      "key": "  ├ WM",
+      "keyColor": "38;5;208",
+      "outputColor": "36"
+    },
+    {
+      "type": "de",
+      "key": "  ├ DE",
+      "keyColor": "38;5;208",
+      "outputColor": "36"
+    },
+    {
+      "type": "custom",
+      "format": "  ╰──────────────────────────────────────────────────────────╯",
+      "outputColor": "38;5;208"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "╭─➤  CUSTOMIZATION ───────────────────────────────────────────╮",
+      "outputColor": "36"
+    },
+    {
+      "type": "custom",
+      "format": "╰─┬───────────────────────────────────────────────────────────╯",
+      "outputColor": "36"
+    },
+    {
+      "type": "theme",
+      "key": "  ├ Theme",
+      "keyColor": "36",
+      "outputColor": "38;5;208"
+    },
+    {
+      "type": "icons",
+      "key": "  ├ Icons",
+      "keyColor": "36",
+      "outputColor": "38;5;208"
+    },
+    {
+      "type": "wmtheme",
+      "key": "  ├ WM Theme",
+      "keyColor": "36",
+      "outputColor": "38;5;208"
+    },
+    {
+      "type": "font",
+      "key": "  ├ Font",
+      "keyColor": "36",
+      "outputColor": "38;5;208"
+    },
+    {
+      "type": "terminalfont",
+      "key": "  ├ Term Font",
+      "keyColor": "36",
+      "outputColor": "38;5;208"
+    },
+    {
+      "type": "cursor",
+      "key": "  ├ Cursor",
+      "keyColor": "36",
+      "outputColor": "38;5;208"
+    },
+    {
+      "type": "custom",
+      "format": "  ╰──────────────────────────────────────────────────────────╯",
+      "outputColor": "36"
     }
   ]
 }
