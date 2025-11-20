@@ -5,7 +5,9 @@ alias ga='git add .'
 alias gc='git commit -m '
 alias gp='git pull'
 alias gb='git branch'
-alias gco='git checkout'
+
+alias gco='git checkout $(git branch | fzf)'
+
 alias gm='git merge '
 alias gd='git diff'
 alias gl='git log'
