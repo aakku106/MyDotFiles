@@ -1,6 +1,7 @@
 <!-- @format -->
 
-# Dotfiles
+# Dotfiles  ![](https://komarev.com/ghpvc/?username=dotFiles&abbreviated=true&base=70&label=Reppo+VIEWS&style=for-the-badge)
+
 
 A comprehensive and modern macOS development environment configuration, featuring a personalized Naruto-themed terminal setup with powerful development tools.
 
