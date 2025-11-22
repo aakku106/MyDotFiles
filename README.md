@@ -113,19 +113,21 @@ A comprehensive and modern macOS development environment configuration, featurin
 ```bash
 g      # git
 gi     # git init
-gs     # git status
+gs     # git status (with bat formatting)
+ga     # git add .
 gc     # git commit -m
 gp     # git pull
-gb     # git branch
+gb     # git branch (with bat formatting)
 gco    # git checkout (interactive with fzf when no args)
 gco -b # create new branch
-gm     # git merge
-gd     # git diff
-gl     # git log
-add    # git add
+gm     # git merge (interactive branch selector with fzf)
+gd     # git diff (with bat formatting)
+gl     # git log (with bat formatting)
+add    # git add (interactive file picker with fzf when no args)
 commit # auto commit with message
 push   # auto commit + push + clear
 clone  # git clone
+gbd    # git branch -d (interactive branch selector with fzf)
 gwt    # git worktree
 gwta   # git worktree add
 gwtr   # git worktree remove
@@ -166,11 +168,13 @@ dk       # docker
 - Use `nv file.txt` to directly open any file in neovim
 - Preserves colors and icons from eza in the picker
 
-#### Interactive Git Checkout with fzf
+#### Interactive Git Operations with fzf
 
-- Type `gco` without arguments to get an interactive branch selector using fzf
-- Use `gco -b new-branch` to create new branches
-- Use `gco main` to directly checkout any branch
+- **`gco`** - Git checkout with interactive branch selector (or use `gco branch-name` directly)
+- **`gm`** - Git merge with interactive branch selector
+- **`add`** - Git add with interactive file picker (or use `add file.txt` directly)
+- **`gbd`** - Git branch delete with interactive branch selector
+- All interactive commands preserve colors and icons for better visibility
 
 #### Git Identity Management
 
