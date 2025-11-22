@@ -16,7 +16,7 @@ gco() {
   fi
 }
 
-alias gm='git merge $(gb | fzf) '
+alias gm='git merge $(gb | fzf)'
 alias gd='git diff | bat --style=-header'
 alias gl='git log | bat --style=-header'
 
