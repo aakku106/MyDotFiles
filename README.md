@@ -1,7 +1,6 @@
 <!-- @format -->
 
-# Dotfiles  ![](https://komarev.com/ghpvc/?username=dotFiles&abbreviated=true&base=70&label=Reppo+VIEWS&style=for-the-badge)
-
+# Dotfiles ![](https://komarev.com/ghpvc/?username=dotFiles&abbreviated=true&base=70&label=Reppo+VIEWS&style=for-the-badge)
 
 A comprehensive and modern macOS development environment configuration, featuring a personalized Naruto-themed terminal setup with powerful development tools.
 
@@ -143,12 +142,12 @@ rizzi      # Switch to tofu-10 (Rizzi) identity
 cd       # zoxide smart navigation
 c        # clear
 e        # exit
-nv       # neovim
+nv       # neovim (interactive file picker with fzf when no args)
 la       # lazygit
 y        # yazi file manager
-l        # eza with icons and git info (compact)
-ls       # clear + eza detailed list with all files
-b        # reload zsh config (source ~/.zshrc)
+l        # eza with icons, git info, and bat formatting (compact)
+ls       # clear + eza detailed list with all files + bat formatting
+b        # reload zsh config (clear + source ~/.zshrc)
 wee/weee # keep system awake (caffeinate)
 naruto   # launch kitty with Naruto theme
 
@@ -160,6 +159,12 @@ dk       # docker
 ```
 
 ### Smart Features
+
+#### Interactive File Picker with fzf
+
+- Type `nv` without arguments to get an interactive file selector using fzf
+- Use `nv file.txt` to directly open any file in neovim
+- Preserves colors and icons from eza in the picker
 
 #### Interactive Git Checkout with fzf
 
