@@ -14,9 +14,9 @@ gco() {
   fi
 }
 
-alias gm='git merge '
-alias gd='git diff'
-alias gl='git log'
+alias gm='git merge $(gb | fzf) '
+alias gd='git diff | bat --style=-header'
+alias gl='git log | bat --style=-header'
 alias add='git add '
 alias commit="git add . && git commit -m ' Auto commit script ran '"
 alias push="git add . ; git commit -m 'Auto commit + push script ran from terminal' ; git push && clear"
