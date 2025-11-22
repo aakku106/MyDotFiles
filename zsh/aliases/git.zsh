@@ -29,7 +29,7 @@ add() {
   fi
 }
 
-alias commit="git add . && git commit -m ' Auto commit script ran'"
+alias commit="git add . && git commit -m ' Auto commit script ran' | bat"
 alias push="git add . ; git commit -m 'Auto commit + push script ran from terminal' ; git push && clear"
 alias clone='git clone '
 alias gbd='gb -d $(gb|fzf)'
