@@ -141,7 +141,7 @@ rizzi      # Switch to tofu-10 (Rizzi) identity
 ### System Navigation & Utilities
 
 ```bash
-cd       # zoxide smart navigation
+cd       # zoxide smart navigation (interactive directory picker with fzf when no args)
 c        # clear
 e        # exit
 nv       # neovim (interactive file picker with fzf when no args)
@@ -161,6 +161,13 @@ dk       # docker
 ```
 
 ### Smart Features
+
+#### Interactive Directory Navigation with fzf
+
+- Type `cd` without arguments to get an interactive directory selector using fzf
+- Shows `..` option to go back to parent directory
+- Shows only directories (no files) with colors
+- Use `cd path` to directly navigate to any directory
 
 #### Interactive File Picker with fzf
 
