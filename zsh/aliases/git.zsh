@@ -21,6 +21,7 @@ alias add='git add '
 alias commit="git add . && git commit -m ' Auto commit script ran '"
 alias push="git add . ; git commit -m 'Auto commit + push script ran from terminal' ; git push && clear"
 alias clone='git clone '
+alias gbd='gb -d $(gb|fzf)'
 alias gwt='git worktree'
 alias gwta='git worktree add'
 alias gwtr='git worktree remove'
