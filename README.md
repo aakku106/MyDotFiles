@@ -270,6 +270,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Windows Users**: This configuration is designed for Unix-like systems. For Windows, consider:
 
+- Consider Switching to UNIX like system, yes it's time to switch
 - Using WSL2 (Windows Subsystem for Linux) for near-native compatibility
 - Installing Windows equivalents: PowerShell instead of Zsh, Windows Terminal, Scoop package manager
 - Manual configuration of development tools
