@@ -1,6 +1,6 @@
 alias g='git'
 alias gi='git init'
-alias gs='git status'
+alias gs='git status |bat --style=-header'
 alias ga='g add .'
 
 alias gc='git commit -m '
