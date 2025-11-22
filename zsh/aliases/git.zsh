@@ -1,6 +1,8 @@
 alias g='git'
 alias gi='git init'
 alias gs='git status'
+alias ga='g add .'
+
 alias gc='git commit -m '
 alias gp='git pull'
 alias gb='git branch'
@@ -17,7 +19,16 @@ gco() {
 alias gm='git merge $(gb | fzf) '
 alias gd='git diff | bat --style=-header'
 alias gl='git log | bat --style=-header'
-alias add='git add '
+
+# Smart git add: uses fzf when no args, otherwise passes args to git add
+add() {
+  if [ $# -eq 0 ]; then
+    git add $(eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions | fzf --ansi | awk '{print $NF}')
+  else
+    git add "$@"
+  fi
+}
+
 alias commit="git add . && git commit -m ' Auto commit script ran '"
 alias push="git add . ; git commit -m 'Auto commit + push script ran from terminal' ; git push && clear"
 alias clone='git clone '
