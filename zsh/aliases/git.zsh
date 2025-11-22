@@ -4,7 +4,7 @@ alias gs='git status | bat --style=-header'
 alias ga='g add .'
 
 alias gc='git commit -m '
-alias gp='git pull'
+alias gp='git pull | bat --style=-header'
 alias gb='git branch | bat --style=-header'
 
 # Smart git checkout: uses fzf when no args, otherwise passes args to git checkout
@@ -30,7 +30,7 @@ add() {
 }
 
 alias commit="git add . && git commit -m ' Auto commit script ran '"
-alias push="git add . ; git commit -m 'Auto commit + push script ran from terminal' ; git push && clear"
+alias push="git add . ; git commit -m 'Auto commit + push script ran from terminal' ; git push && clear | bat"
 alias clone='git clone '
 alias gbd='gb -d $(gb|fzf)'
 alias gwt='git worktree'
