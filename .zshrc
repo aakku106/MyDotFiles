@@ -46,9 +46,9 @@ RANDOM_INDEX=$(( RANDOM % ${#RANDOM_QUOTES[@]} + 1 ))
 echo "${RANDOM_QUOTES[$RANDOM_INDEX]}"
 echo
 
-source ~/.dotfiles/zsh/plugins.zsh
 
-source ~/.dotfiles/zsh/aliases/git.zsh
-source ~/.dotfiles/zsh/aliases/docker.zsh
+source ~/.dotfiles/zsh/plugins.zsh
 source ~/.dotfiles/zsh/aliases/geneeral.zsh
+source ~/.dotfiles/zsh/aliases/git.zsh
 source ~/.dotfiles/zsh/aliases/python.zsh
+source ~/.dotfiles/zsh/aliases/docker.zsh
