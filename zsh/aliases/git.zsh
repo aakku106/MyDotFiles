@@ -1,11 +1,11 @@
 alias g='git'
 alias gi='git init'
-alias gs='git status |bat --style=-header'
+alias gs='git status | bat --style=-header'
 alias ga='g add .'
 
 alias gc='git commit -m '
 alias gp='git pull'
-alias gb='git branch'
+alias gb='git branch | bat --style=-header'
 
 # Smart git checkout: uses fzf when no args, otherwise passes args to git checkout
 gco() {
