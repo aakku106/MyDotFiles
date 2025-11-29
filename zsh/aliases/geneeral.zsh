@@ -27,4 +27,7 @@ cd() {
   fi
 }
 
+
+alias vs='code .' # why write long strings when thinds can be done with 2 char
+
 alias naruto="kitty --config ~/.config/kitty/naruto.conf"
