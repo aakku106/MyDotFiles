@@ -1,3 +1,6 @@
 # Ignore GitHub Copilot
 .config/github-copilot/apps.json
 brew_update_lo*
+
+# mac
+.DS_*
