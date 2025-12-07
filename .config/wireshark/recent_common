@@ -22,17 +22,17 @@ recent.display_filter: tcp.port == 80
 recent.display_filter: tcp.port == 80 || udp.port == 80
 recent.display_filter: eth.addr == ff:ff:ff:ff:ff:ff
 recent.display_filter: eth.addr == 00:00:5e:00:53:00
-recent.display_filter:  udp
+recent.display_filter: udp
 recent.display_filter: ip.addr == 192.0.1.1
 recent.display_filter: http3
 recent.display_filter: http
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 1469
-gui.geometry_main_y: 928
+gui.geometry_main_x: 0
+gui.geometry_main_y: 33
 gui.geometry_main_width: 1470
-gui.geometry_main_height: 893
+gui.geometry_main_height: 923
 
 # Main window maximized.
 # true or false (case-insensitive).
@@ -40,7 +40,7 @@ gui.geometry_main_maximized: false
 
 # Main window geometry state.
 # Hex byte string.
-gui.geometry_main: 01d9d0cb00030000000005bd000003a000000b7a00000738000005bd000003bc00000b7a00000738000000000000000005be000005bd000003bc00000b7a00000738
+gui.geometry_main: 01d9d0cb000300000000000000000021000005bd000003bb0000001e0000003e000005bd000003ba000000000004000005be0000000000000021000005bd000003bb
 
 # Leftalign Action Buttons.
 # true or false (case-insensitive).
@@ -139,6 +139,17 @@ gui.geom.CaptureFilePropertiesDialog.height: 893
 gui.geom.CaptureFilePropertiesDialog.maximized: false
 # Qt Geometry State (hex byte string).
 gui.geom.CaptureFilePropertiesDialog.qt_geometry: 01d9d0cb00030000000000eb00000022000004be000003ba000000eb0000003e000004be000003ba000000000000000005be000000eb0000003e000004be000003ba
+
+# Geometry and maximized state of PreferencesDialog window.
+# Decimal integers.
+gui.geom.PreferencesDialog.x: 763
+gui.geom.PreferencesDialog.y: 243
+gui.geom.PreferencesDialog.width: 680
+gui.geom.PreferencesDialog.height: 554
+# true or false (case-insensitive).
+gui.geom.PreferencesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PreferencesDialog.qt_geometry: 01d9d0cb00030000000002fb000000f3000005a200000338000002fb0000010f000005a200000338000000000000000005be000002fb0000010f000005a200000338
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.
