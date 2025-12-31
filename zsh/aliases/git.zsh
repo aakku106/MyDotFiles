@@ -30,7 +30,7 @@ add() {
 }
 
 alias commit="git add . && git commit -m ' Auto commit script ran' | bat --style=-header"
-alias push="git add . ; git commit -m 'Auto commit + push script ran from terminal' ; git push && clear"
+alias push="git add . ; git commit -m 'Auto commit + push script ran from terminal' | bat --style=-header; git push && clear"
 alias clone='git clone '
 alias gbd='gb -d $(gb|fzf)'
 alias gwt='git worktree'
