@@ -113,6 +113,7 @@ alt-p = 'workspace P' # for Photo Editing
 alt-t = 'workspace T' # for Terminal
 alt-v = 'workspace V' # for Video Editing
 alt-i = 'workspace I' # for IphoneMirroring
+alt-s = 'workspace S' # for Screen capture and streaming
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 cmd-ctrl-alt-shift-1 = 'move-node-to-workspace 1'
@@ -132,6 +133,7 @@ cmd-ctrl-alt-shift-p = 'move-node-to-workspace P' # for Photo Editing
 cmd-ctrl-alt-shift-t = 'move-node-to-workspace T' # for Terminal
 cmd-ctrl-alt-shift-v = 'move-node-to-workspace V' # for Video Editing
 cmd-ctrl-alt-shift-i = 'move-node-to-workspace I' # for Iphone Mirroring
+cmd-ctrl-alt-shift-s = 'move-node-to-workspace S' # for Streaming and Screen Recording
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -238,6 +240,9 @@ run = "move-node-to-workspace N" # Note taking app Note(apple defult app)
 if.app-id='com.apple.ScreenContinuity'
 run = "move-node-to-workspace I" # Iphone Morroring contunity app
 
+[[on-window-detected]]
+if.app-id='com.obsproject.obs-studio'
+run = "move-node-to-workspace S" # Streaming & Screen Recording
 
 
 #-----------------Add app below this which aaerespace shall ignore --------------------#
