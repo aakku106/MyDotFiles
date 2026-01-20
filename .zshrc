@@ -52,3 +52,10 @@ source ~/.dotfiles/zsh/aliases/geneeral.zsh
 source ~/.dotfiles/zsh/aliases/git.zsh
 source ~/.dotfiles/zsh/aliases/python.zsh
 source ~/.dotfiles/zsh/aliases/docker.zsh
+
+# bun completions
+[ -s "/Users/aakku/.bun/_bun" ] && source "/Users/aakku/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
