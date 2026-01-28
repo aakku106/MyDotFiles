@@ -1,3 +1,3 @@
 alias dk='docker'
-alias dkla="dk container ps -a"
-alias dkl="dk container ps"
+alias dkcl="dk container ps"
+alias dkcla="dk container ps -a"
