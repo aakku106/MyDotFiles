@@ -212,10 +212,15 @@ run = "move-node-to-workspace 3" # TimeWastre
 if.app-id='net.whatsapp.WhatsApp'
 run = "move-node-to-workspace 3" # Timewester
 
+#---------------------- BORWSERS -------------------------------------#
+
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-run = "move-node-to-workspace B"# browser Safari
+run = "move-node-to-workspace B"# Safari
 
+[[on-window-detected]]
+if.app-id='com.brave.Browser'
+run = "move-node-to-workspace B" # Brave
 [[on-window-detected]]
 if.app-id='org.mozilla.firefox'
 run = "move-node-to-workspace B" # FireFox Normal
@@ -223,6 +228,9 @@ run = "move-node-to-workspace B" # FireFox Normal
 [[on-window-detected]]
 if.app-id='org.mozilla.firefoxdeveloperedition'
 run = "move-node-to-workspace B" #firefox dev
+
+
+#-----------------------------------------------------------------------#
 
 [[on-window-detected]]
 if.app-id='com.apple.ActivityMonitor'
