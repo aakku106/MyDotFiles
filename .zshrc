@@ -3,9 +3,7 @@ if [[ -r "${XDG_CACHE_HOME:-~/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; th
   source "${XDG_CACHE_HOME:-~/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-#===========================
 #      CONFIG SOURCING
-#===========================
 
 # → General exports (EDITOR, DOTNET vars, etc.)
 source ~/.dotfiles/zsh/export.zsh
@@ -16,9 +14,7 @@ source ~/.dotfiles/zsh/paths.zsh
 # → Plugins (fzf, thefuck, zoxide, syntax-highlighting, autosuggestions, etc.)
 
 
-#===========================
 #     POWERLEVEL10K THEME
-#===========================
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -26,9 +22,7 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # bun completions
 [ -s "/Users/aakku/.bun/_bun" ] && source "/Users/aakku/.bun/_bun"
 
-#===========================
 #      TERMINAL WELCOME
-#===========================
 
   fastfetch
 
