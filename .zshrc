@@ -23,6 +23,9 @@ source ~/.dotfiles/zsh/paths.zsh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# bun completions
+[ -s "/Users/aakku/.bun/_bun" ] && source "/Users/aakku/.bun/_bun"
+
 #===========================
 #      TERMINAL WELCOME
 #===========================
@@ -49,5 +52,4 @@ source ~/.dotfiles/zsh/aliases/git.zsh
 source ~/.dotfiles/zsh/aliases/python.zsh
 source ~/.dotfiles/zsh/aliases/docker.zsh
 
-# bun completions
-[ -s "/Users/aakku/.bun/_bun" ] && source "/Users/aakku/.bun/_bun"
+
