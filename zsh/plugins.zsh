@@ -7,7 +7,7 @@ eval "$(zoxide init zsh)"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Custom Yazi wrapper (no auto-launch, works perfect)
+# Custom Yazi wrapper
 yazi() {
   local tmpfile=$(mktemp)
   command yazi --cwd-file="$tmpfile" "$@"
