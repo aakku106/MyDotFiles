@@ -27,11 +27,7 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 #      TERMINAL WELCOME
 #===========================
 
-if command -v fastfetch > /dev/null; then
   fastfetch
-elif command -v neofetch > /dev/null; then
-  neofetch
-fi
 
 echo
 RANDOM_QUOTES=(
