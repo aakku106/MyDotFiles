@@ -1,7 +1,5 @@
 return {
-  { 'windwp/nvim-ts-autotag' }, -- auto-close JSX/HTML tags
-
-  -- Tailwind highlight and color hex codes
+  { 'windwp/nvim-ts-autotag' },
   {
     'NvChad/nvim-colorizer.lua',
     event = 'BufReadPre',
