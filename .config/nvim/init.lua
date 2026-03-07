@@ -618,7 +618,7 @@ set(0, 'DiagnosticHint', { fg = green })
 set(0, 'EndOfBuffer', { fg = bg, bg = none })
 
 -- Move lines up/down
-vim.keymap.set('n', '<A-j>', ':m .+1<CR>==', { desc = 'Move line down' })
-vim.keymap.set('n', '<A-k>', ':m .-2<CR>==', { desc = 'Move line up' })
-vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
-vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
+vim.keymap.set('n', '<C-j>', ':m .+1<CR>==', { desc = 'Move line down' })
+vim.keymap.set('n', '<C-k>', ':m .-2<CR>==', { desc = 'Move line up' })
+vim.keymap.set('v', '<C-j>', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
+vim.keymap.set('v', '<C-k>', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
