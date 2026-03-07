@@ -1,9 +1,4 @@
 return {
-  -- HTML, CSS, JS/TS support
-  { 'williamboman/mason.nvim' },
-  { 'williamboman/mason-lspconfig.nvim' },
-  { 'neovim/nvim-lspconfig' },
-
   -- Treesitter (syntax highlighting)
   {
     'nvim-treesitter/nvim-treesitter',
