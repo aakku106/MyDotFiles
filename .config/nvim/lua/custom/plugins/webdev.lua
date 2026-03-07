@@ -14,7 +14,6 @@ return {
     },
   },
   { 'windwp/nvim-ts-autotag' }, -- auto-close JSX/HTML tags
-  { 'windwp/nvim-autopairs' }, -- auto-close brackets
 
   -- Formatter (Prettier)
   { 'stevearc/conform.nvim' },
