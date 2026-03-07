@@ -15,9 +15,6 @@ return {
   },
   { 'windwp/nvim-ts-autotag' }, -- auto-close JSX/HTML tags
 
-  -- Formatter (Prettier)
-  { 'stevearc/conform.nvim' },
-
   -- Tailwind highlight and color hex codes
   {
     'NvChad/nvim-colorizer.lua',
