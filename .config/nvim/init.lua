@@ -312,7 +312,7 @@ require('lazy').setup({
       -- Language servers
       local servers = {
         clangd = {},
-        gopls = {}, -- optional (Go)
+        gopls = {},
         ts_ls = {},
 
         lua_ls = {
