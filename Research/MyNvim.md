@@ -437,17 +437,17 @@ This Neovim setup is based on **Kickstart.nvim** with custom additions. The conf
 
 ### DUPLICATIONS
 
-3. **nvim-treesitter** - Configured twice (init.lua + webdev.lua)
-4. **nvim-autopairs** - Declared twice (kickstart + webdev)
-5. **conform.nvim** - Declared twice (init.lua + webdev)
-6. **friendly-snippets** - Declared twice (init.lua + webdev)
-7. **gitsigns.nvim** - Configured twice (intentional extension)
+1. **nvim-treesitter** - Configured twice (init.lua + webdev.lua)
+2. **nvim-autopairs** - Declared twice (kickstart + webdev)
+3. **conform.nvim** - Declared twice (init.lua + webdev)
+4. **friendly-snippets** - Declared twice (init.lua + webdev)
+5. **gitsigns.nvim** - Configured twice (intentional extension)
 
 ### UNUSED/QUESTIONABLE
 
-8. **vim-be-good** - Training game, likely unused
-9. **nvim-dap** - Only configured for Go, useless if not debugging Go
-10. **nvim-lint** - Only configured for markdown, underutilized
+1. **vim-be-good** - Training game, likely unused
+2. **nvim-dap** - Only configured for Go, useless if not debugging Go
+3. **nvim-lint** - Only configured for markdown, underutilized
 
 ---
 
@@ -492,10 +492,10 @@ This Neovim setup is based on **Kickstart.nvim** with custom additions. The conf
 
 ### OPTIONAL
 
-4. **Remove vim-be-good** if you're not actively training
-5. **Remove debug.lua** if you don't debug Go programs
-6. **Merge gitsigns configs** into single file for clarity
-7. **Expand nvim-lint** or remove it (currently only markdown)
+1. **Remove vim-be-good** if you're not actively training
+2. **Remove debug.lua** if you don't debug Go programs
+3. **Merge gitsigns configs** into single file for clarity
+4. **Expand nvim-lint** or remove it (currently only markdown)
 
 ---
 
@@ -625,15 +625,15 @@ After cleanup:
 
 ### Medium Priority
 
-4. Remove unused plugins (vim-be-good, debug if not needed)
-5. Expand or remove nvim-lint
-6. Consider merging gitsigns configs
+1. Remove unused plugins (vim-be-good, debug if not needed)
+2. Expand or remove nvim-lint
+3. Consider merging gitsigns configs
 
 ### Low Priority
 
-7. Review and tune lazy loading settings
-8. Add more linters/formatters if needed
-9. Consider adding file explorer (neo-tree commented out)
+1. Review and tune lazy loading settings
+2. Add more linters/formatters if needed
+3. Consider adding file explorer (neo-tree commented out)
 
 ---
 
