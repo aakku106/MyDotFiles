@@ -41,14 +41,20 @@ Leader key: `<Space>`
 | `<leader>x`  | Normal   | Save and quit                 |
 | `<leader>q`  | Normal   | Open diagnostic quickfix list |
 
-### Window Navigation
+### Window Management
 
-| Key     | Mode   | Action               |
-| ------- | ------ | -------------------- |
-| `<C-h>` | Normal | Move to left window  |
-| `<C-l>` | Normal | Move to right window |
-| `<C-j>` | Normal | Move to lower window |
-| `<C-k>` | Normal | Move to upper window |
+| Key          | Mode    | Action                    |
+| ------------ | ------- | ------------------------- |
+| `<C-h>`      | Normal  | Move to left window       |
+| `<C-l>`      | Normal  | Move to right window      |
+| `<C-j>`      | Normal  | Move to lower window      |
+| `<C-k>`      | Normal  | Move to upper window      |
+| `<leader>-`  | Normal  | Split window horizontally |
+| `<leader>\|` | Normal  | Split window vertically   |
+| `<leader>wc` | Normal  | Close current window      |
+| `<leader>wo` | Normal  | Close all other windows   |
+| `:sp`        | Command | Horizontal split          |
+| `:vs`        | Command | Vertical split            |
 
 ### Telescope (Search)
 
