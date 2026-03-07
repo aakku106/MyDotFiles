@@ -1,13 +1,4 @@
 return {
-  -- Treesitter (syntax highlighting)
-  {
-    'nvim-treesitter/nvim-treesitter',
-    opts = {
-      ensure_installed = { 'html', 'css', 'javascript', 'typescript', 'tsx' },
-      highlight = { enable = true },
-      autotag = { enable = true },
-    },
-  },
   { 'windwp/nvim-ts-autotag' }, -- auto-close JSX/HTML tags
 
   -- Tailwind highlight and color hex codes
