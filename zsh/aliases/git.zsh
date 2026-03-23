@@ -38,6 +38,11 @@ alias gwta='git worktree add'
 alias gwtr='git worktree remove'
 alias gw='git worktree list'
 
+
+###---------GITHUB CLI-------###
+alias gh-create='gh repo create --private --source=. --remote=origin && git push -u --all && gh browse'
+
+
 # --- Identity switch aliases ---
 alias aakku='git config user.name "aakku106" && git config user.email "adarashagaihre80@nepathyacollege.edu.np" && echo "Switched identity → 🌀 aakku106"'
 
