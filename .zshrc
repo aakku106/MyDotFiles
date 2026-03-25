@@ -46,4 +46,6 @@ source ~/.dotfiles/zsh/aliases/git.zsh
 source ~/.dotfiles/zsh/aliases/python.zsh
 source ~/.dotfiles/zsh/aliases/docker.zsh
 
-
+set -o vi
+alias cat="bat"
+alias vim="nv"
