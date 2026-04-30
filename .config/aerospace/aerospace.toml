@@ -180,13 +180,22 @@ run = "move-node-to-workspace T" #VsCode
 if.app-id = 'com.openai.chat'
 run = "move-node-to-workspace 1"# ai ChatGpt
 
-[[on-window-detected]]
-if.app-id = 'com.apple.Safari.WebApp.94982590-44BE-4FAC-81DD-296DDC5B94B5' #YT-MUSIC
-run = "move-node-to-workspace M"# music
+
+#---------------------- MUSIC -------------------------------------#
 
 [[on-window-detected]]
-if.app-id = 'com.spotify.client'
-run = "move-node-to-workspace M"# music
+if.app-id = 'com.apple.Safari.WebApp.94982590-44BE-4FAC-81DD-296DDC5B94B5' #YT-MUSIC
+run = "move-node-to-workspace M"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Music' # Apple Music
+run = "move-node-to-workspace M"
+
+[[on-window-detected]]
+if.app-id = 'com.spotify.client' #Spotify
+run = "move-node-to-workspace M"
+
+#-------------------------------------------------------------------#
  
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
