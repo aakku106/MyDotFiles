@@ -171,7 +171,7 @@ tmux: X.X.X
 
 ### 4. Subscribe to Changelog
 
-- GitHub: https://github.com/yazi-rs/yazi/releases
+- GitHub: <https://github.com/yazi-rs/yazi/releases>
 - Key watch points:
   - Major version bumps (X.0.0)
   - Deprecation notices
