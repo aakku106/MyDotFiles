@@ -176,10 +176,14 @@ run = "move-node-to-workspace T"# Terminal defult
 if.app-id='com.microsoft.VSCode'
 run = "move-node-to-workspace T" #VsCode
 
+#---------------------------ON Device Ai Apps---------------------#
 [[on-window-detected]]
 if.app-id = 'com.openai.chat'
-run = "move-node-to-workspace 1"# ai ChatGpt
-
+run = "move-node-to-workspace 1"# ChatGpt
+  
+[[on-window-detected]]
+if.app-id = 'com.google.GeminiMacOS'
+run = "move-node-to-workspace 1"# Gemini
 
 #---------------------- MUSIC -------------------------------------#
 
