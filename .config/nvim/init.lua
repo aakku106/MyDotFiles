@@ -322,7 +322,6 @@ require('lazy').setup({
       local servers = {
         clangd = {},
         gopls = {},
-        ts_ls = {},
 
         lua_ls = {
           settings = {
@@ -330,21 +329,19 @@ require('lazy').setup({
               completion = {
                 callSnippet = 'Replace',
               },
-              -- diagnostics = { disable = { 'missing-fields' } },
             },
           },
         },
-        --- js ko lagi forcefully
+
         vtsls = {
           settings = {
             javascript = {
               implicitProjectConfig = {
-                checkJs = true, -- 👈 THIS IS THE TRICK FOR PLAIN JAVASCRIPT FILES
+                checkJs = true,
               },
             },
           },
         },
-        ---
       }
 
       -- Mason tool installer
