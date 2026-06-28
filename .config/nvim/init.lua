@@ -334,6 +334,17 @@ require('lazy').setup({
             },
           },
         },
+        --- js ko lagi forcefully
+        vtsls = {
+          settings = {
+            javascript = {
+              implicitProjectConfig = {
+                checkJs = true, -- 👈 THIS IS THE TRICK FOR PLAIN JAVASCRIPT FILES
+              },
+            },
+          },
+        },
+        ---
       }
 
       -- Mason tool installer
