@@ -323,6 +323,24 @@ require('lazy').setup({
         clangd = {},
         gopls = {},
 
+        omnisharp = {
+          cmd = { 'omnisharp' },
+          settings = {
+            FormattingOptions = {
+              EnableEditorConfigSupport = true,
+              OrganizeImports = true,
+            },
+            MsBuild = {
+              LoadProjectsOnDemand = false,
+            },
+            RoslynExtensionsOptions = {
+              EnableAnalyzersSupport = true,
+              EnableImportCompletion = true,
+              AnalyzeOpenDocumentsOnly = false,
+            },
+          },
+        },
+
         lua_ls = {
           settings = {
             Lua = {
@@ -342,9 +360,7 @@ require('lazy').setup({
             },
           },
         },
-      }
-
-      -- Mason tool installer
+      } -- Mason tool installer
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua',
