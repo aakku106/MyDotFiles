@@ -249,13 +249,22 @@ run = "move-node-to-workspace B" #firefox dev
 if.app-id='com.apple.ActivityMonitor'
 run = "move-node-to-workspace F" # ActivityMonitor
 
+#----------Note Taking Apps------------------------_#
+
+[[on-window-detected]]
+if.app-id='com.adibhanna.zennotes' 
+run = "move-node-to-workspace N" # ZenNotes
+
+
 [[on-window-detected]]
 if.app-id='md.obsidian' 
-run = "move-node-to-workspace N" # Note taking app obsidian
+run = "move-node-to-workspace N" # obsidian
 
 [[on-window-detected]]
 if.app-id='com.apple.Notes'
-run = "move-node-to-workspace N" # Note taking app Note(apple defult app)
+run = "move-node-to-workspace N" # Note(apple defult app)
+
+#----------------------------------------------------_#
 
 [[on-window-detected]]
 if.app-id='com.apple.ScreenContinuity'
