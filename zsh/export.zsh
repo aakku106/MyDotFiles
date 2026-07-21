@@ -4,3 +4,4 @@ export PATH=$DOTNET_ROOT:$PATH
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
