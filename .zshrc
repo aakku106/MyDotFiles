@@ -49,3 +49,7 @@ source ~/.dotfiles/zsh/aliases/docker.zsh
 set -o vi
 alias cat="bat"
 alias vim="nv"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# opencode
+export PATH=/Users/aakku/.opencode/bin:$PATH
