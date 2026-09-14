@@ -27,30 +27,30 @@ The `%` formatting system (introduced/deprecated in v25.12.29 via PR #3232) had 
 ```diff
  [opener]
  edit = [
-- 	{ run = 'nvim "$@"', desc = "nvim", block = true },
-+ 	{ run = 'nvim %s', desc = "nvim", block = true, for = "unix" },
+-  { run = 'nvim "$@"', desc = "nvim", block = true },
++  { run = 'nvim %s', desc = "nvim", block = true, for = "unix" },
  ]
  open = [
-- 	{ run = 'open "$@"', desc = "Open" },
-+ 	{ run = 'open %s', desc = "Open", for = "unix" },
+-  { run = 'open "$@"', desc = "Open" },
++  { run = 'open %s', desc = "Open", for = "unix" },
  ]
  reveal = [
-- 	{ run = 'open -R "$1"', desc = "Reveal" },
-+ 	{ run = 'open -R %s1', desc = "Reveal", for = "unix" },
+-  { run = 'open -R "$1"', desc = "Reveal" },
++  { run = 'open -R %s1', desc = "Reveal", for = "unix" },
  ]
 ```
 
 **New placeholder reference:**
 
-| Placeholder | Meaning |
-| ----------- | ------- |
-| `%s`   | Paths of all selected files |
-| `%S`   | URLs of all selected files |
-| `%sN`  | Path of the N-th selected file (e.g. `%s1`, `%s2`) |
-| `%SN`  | URL of the N-th selected file |
-| `%d`   | Dirnames of all selected files |
-| `%dN`  | Dirname of the N-th selected file |
-| `%%`   | Literal `%` |
+| Placeholder | Meaning                                            |
+| ----------- | -------------------------------------------------- |
+| `%s`        | Paths of all selected files                        |
+| `%S`        | URLs of all selected files                         |
+| `%sN`       | Path of the N-th selected file (e.g. `%s1`, `%s2`) |
+| `%SN`       | URL of the N-th selected file                      |
+| `%d`        | Dirnames of all selected files                     |
+| `%dN`       | Dirname of the N-th selected file                  |
+| `%%`        | Literal `%`                                        |
 
 **Key differences from old shell syntax:**
 
