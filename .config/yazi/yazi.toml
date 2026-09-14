@@ -1,6 +1,6 @@
-# yazi.toml - Updated for yazi 25.12.29+
+# yazi.toml - Updated for yazi 26.8.15+
 
-[manager]
+[mgr]
 ratio          = [ 2, 3, 5 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
@@ -21,13 +21,13 @@ image_quality = 75
 
 [opener]
 edit = [
-	{ run = 'nvim "$@"', desc = "nvim", block = true },
+	{ run = 'nvim %s', desc = "nvim", block = true, for = "unix" },
 ]
 open = [
-	{ run = 'open "$@"', desc = "Open" },
+	{ run = 'open %s', desc = "Open", for = "unix" },
 ]
 reveal = [
-	{ run = 'open -R "$1"', desc = "Reveal" },
+	{ run = 'open -R %s1', desc = "Reveal", for = "unix" },
 ]
 
 [open]
@@ -42,7 +42,7 @@ rules = [
 ]
 
 [tasks]
-micro_workers = 10
-macro_workers = 10
-bizarre_retry = 3
-image_alloc   = 536870912
+file_workers   = 10
+plugin_workers = 10
+bizarre_retry  = 3
+image_alloc    = 536870912
