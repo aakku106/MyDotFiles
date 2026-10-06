@@ -203,7 +203,7 @@ run = "move-node-to-workspace M"
  
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
-run = "move-node-to-workspace F"# finder
+run = "move-node-to-workspace E"# finder
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Preview'
