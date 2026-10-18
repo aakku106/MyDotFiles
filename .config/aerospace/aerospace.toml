@@ -247,7 +247,7 @@ run = "move-node-to-workspace B" #firefox dev
 
 [[on-window-detected]]
 if.app-id='com.apple.ActivityMonitor'
-run = "move-node-to-workspace F" # ActivityMonitor
+run = "move-node-to-workspace E" # ActivityMonitor
 
 #----------Note Taking Apps------------------------_#
 
